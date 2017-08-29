@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Title Page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./bootstrap-social/bootstrap-social.css">
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+
+		nav .navbar{
+			margin-bottom: 0;
+		}
+
+		.home-content{
+			font-weight: 900;
+		}
+
+		.thumbnail{
+			border: none;
+		}
+
+		.thumbnail img{
+			border: 2px solid lightgray; 
+			padding: 5px;
+		}
+
+		.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+			background-color: lightblue;
+		}
+
+		.nav-tabs>li>a{
+			margin:0 10px;
+			background-color: lightgray;
+		}
+		.nav-justified>li>a{
+			border-radius: 5px!important;
+		}
+
+		footer{
+			background-color: #71C25D;
+		}
+		
+
+		.copyright, .icon{
+			margin-top: -30px;
+		}
+
+		.icon li .fa{
+			color: white;
+		}
+
+		.m30{
+			margin: 30px 0;
+		}
+
+
+		</style>
+	</head>
+	<body>
+		
+		<!-- nav====================================================== -->
+			<nav>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<nav class="navbar navbar-default" role="navigation">
+							<div class="container">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+										<span class="sr-only">選單切換</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="#">Himi</a>
+								</div>
+								
+								<!-- 手機隱藏選單區 -->
+								<div class="collapse navbar-collapse navbar-ex1-collapse">
+									<!-- 左選單 -->
+									
+									<!-- 搜尋表單 -->
+									<form class="navbar-form navbar-right" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="請輸入關鍵字">
+										</div>
+										<button type="submit" class="btn btn-default">搜尋</button>
+									</form>
+								
+									<!-- 右選單 -->
+									<ul class="nav navbar-nav navbar-right">
+										<li><a href="#">Amos 您好</a></li>
+										<li><a href="#">登出</a></li>
+										<li><a href="#">個人設定</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">繁體中文 <b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">繁體中文</a></li>
+												<li><a href="#">English</a></li>
+												<li><a href="#">日本語</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- 手機隱藏選單區結束 -->
+							</div>
+						</nav>
+					</div>
+				</div>
+			</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- slider====================================================== -->
+		<div id="carousel-id" class="carousel slide" data-ride="carousel">
+		    <!-- 幻燈片小圓點區 -->
+		    <ol class="carousel-indicators">
+		        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+		        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+		        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+		    </ol>
+		    <!-- 幻燈片主圖區 -->
+		    <div class="carousel-inner">
+		        <div class="item">
+		            <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>我是標題</h1>
+		                    <p>我是內文</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item">
+		            <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>我是標題</h1>
+		                    <p>我是內文</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">更多</a></p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="item active">
+		            <img src="https://api.fnkr.net/testimg/2800x700/aaaaaa" alt="">
+		            <div class="container">
+		                <div class="carousel-caption">
+		                    <h1>我是標題喔～</h1>
+		                    <p>我是內文喔，</p>
+		                    <p><a class="btn btn-lg btn-primary" href="#" role="button">詳細內容</a></p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <!-- 上下頁控制區 -->
+		    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- service====================================================== -->
+	<div class="service m30">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3">
+					<div class="item">
+						<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle center-block">
+						<p class="text-center">Lorem ipsum dolor.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-3">
+					<div class="item">
+						<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle center-block">
+						<p class="text-center">Lorem ipsum dolor.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-3">
+					<div class="item">
+						<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle center-block">
+						<p class="text-center">Lorem ipsum dolor.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-3">
+					<div class="item">
+						<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle">
+						<p>Lorem ipsum dolor.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- homes====================================================== -->
+
+	<div class="home-title m30">
+		<div class="row text-center ">
+			<div class="col-xs-12 col-sm-12">
+				<h1>TOP HOLIDAY DESTINATION</h1>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="home-content m30">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div role="tabpanel">
+					    <!-- 標籤面板：標籤區 -->
+					    <ul class="nav nav-tabs nav-justified m30" role="tablist">
+					        <li role="presentation" class="active">
+					            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">屏東</a>
+					        </li>
+					        <li role="presentation">
+					            <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">高雄</a>
+					        </li>
+					        <li role="presentation">
+					            <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">台中</a>
+					        </li>
+					        <li role="presentation">
+					            <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">台北</a>
+					        </li>
+					    </ul>
+					
+					    <!-- 標籤面板：內容區 -->
+					    <div class="tab-content">
+					        <div role="tabpanel" class="tab-pane active" id="tab1">
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, consequatur minus illo tempora ipsa amet cupiditate beatae commodi eligendi itaque.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti minus assumenda tempora. Perspiciatis esse nemo, voluptatibus porro excepturi libero fugiat.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque modi, laudantium aperiam iusto pariatur labore voluptate dicta non dolores incidunt.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est optio eligendi accusamus maiores consectetur recusandae? Praesentium ut voluptatum inventore voluptatibus.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, in atque dolore reiciendis incidunt esse a nostrum maxime numquam eaque!</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo expedita voluptatum deserunt hic culpa cum aspernatur libero, nemo suscipit eveniet.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+					        </div>
+					        <div role="tabpanel" class="tab-pane" id="tab2">
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis id corporis, provident quidem cupiditate aspernatur pariatur dolores modi quas velit!</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio at dolorum, inventore nihil nulla eos in ducimus sunt accusantium unde.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate maiores eius repellendus autem, quas aspernatur ea quidem incidunt iusto facilis.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem delectus consequuntur porro, impedit, repellat illum nemo quo natus culpa ad.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+					        </div>
+					        <div role="tabpanel" class="tab-pane" id="tab3">
+					        	<div class="row">
+					        			<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        			<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+					        </div>
+					        <div role="tabpanel" class="tab-pane" id="tab4">
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+					        	<div class="row">
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        		<div class="col-xs-12 col-sm-4">
+					        			<div class="item">
+					        				<a href="#" class="thumbnail">
+					        					<img src="https://api.fnkr.net/testimg/350x200/aaaaaa" alt="">
+					        					<div class="caption">
+					        						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore molestias, ratione assumenda voluptatibus nesciunt officiis eum cum labore temporibus aut.</p>
+					        					</div>
+					        				</a>
+					        			</div>
+					        		</div>
+					        	</div>
+
+
+					        </div>
+					    </div>
+					</div>
+				</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- employee====================================================== -->
+	<div class="container">
+		<div class="row m30">
+			<div class="col-xs-12 col-sm-4">
+				<div class="item">
+					<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore, vitae asperiores possimus accusamus repellat praesentium voluptatem molestiae tenetur alias?</p>
+					<p class="name text-right"><strong>HIMI HUANG</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="item">
+					<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus modi eius architecto vero aliquam eveniet consequuntur doloremque quaerat, nihil alias?</p>
+					<p class="name text-right"><strong>HIMI HUANG</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="item">
+					<img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda officia, quidem? Natus libero delectus dolore adipisci, tempora vitae id quod.</p>
+					<p class="name text-right"><strong>HIMI HUANG</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- footer====================================================== -->
+		<footer>
+			<div class="container">
+						<div class="row m30">
+							<div class="col-xs-12 col-sm-4">
+								<h1>ABOUT</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, aperiam maxime voluptate sit, possimus est fuga explicabo placeat quod sapiente.</p>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<h1>ABOUT</h1>
+								<ul class="list-unstyled">
+									<li><a href="#">Lorem ipsum dolor.</a></li>
+									<li><a href="#">Lorem ipsum dolor.</a></li>
+									<li><a href="#">Lorem ipsum dolor.</a></li>
+									<li><a href="#">Lorem ipsum dolor.</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<h1>ABOUT</h1>
+								<div class="form-group">
+									<label for="name" class="sr-only">文字</label>
+									<input type="text" name="name" id="name" placeholder="Name" class="form-control">
+									<br>
+									<label for="email" class="sr-only">文字</label>
+									<input type="text" name="email" id="email" placeholder="Email" class="form-control">
+									<br>
+									<label for="message" class="sr-only">文字</label>
+									<textarea name="message" id="message" placeholder="message" class="form-control" rows="5"></textarea> 
+			
+								</div>
+			
+								<span><a class="btn btn-danger btn-lg" href="#">送出</a></span>
+			
+							</div>
+						</div>
+			
+						<div class="row m30">
+							<div class="col-xs-12 col-sm-4">
+								<div class="item">
+									<div class="copyright">
+										<p>Himi &copy copyright 2017</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								
+									<ul class="list-unstyled list-inline icon">
+										<li>
+											<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										</li>
+																	
+										
+																	
+										<li>
+											<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										</li>
+																	
+										
+																	
+										<li>
+											<a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+										</li>
+																	
+										
+																	
+										<li>
+											<a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+										</li>
+									</ul>
+								
+							</div>
+						</div>
+					</div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

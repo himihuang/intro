@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Title Page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style type="text/css">
+		@media screen and (max-width:767px){
+			.navbar{
+				z-index: 10;
+			}
+			.my-navbar{
+				position: fixed;
+				background-color: #ccc;
+				overflow: auto;
+				width: 70%;
+				top: 50px;
+				z-index: 9;
+				height: calc(100vh - 50px);
+				transition: 1s;
+			}
+			.my-navbar .navbar-nav{
+				margin: 0;
+			}
+			.my-navbar .navbar-form{
+				margin: 0;
+			}
+			.leftIn{
+				left: -100%;
+			}
+			.rightIn{
+				right: -100%;
+			}
+			.my-navbar.leftIn.open{
+				left: 0;
+			}
+			.my-navbar.rightIn.open{
+				right: 0;
+			}
+		}
+		.panel{
+			margin-bottom: 10px 0;
+		}
+		
+		.logo {
+		    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -173px -26px;
+		    background-size: 548px 322px;
+		    width: 73.5px;
+		    height: 30px;
+		    display: inline-block;
+		     position: relative;
+			vertical-align: middle;
+		}
+
+		.text-inline-block{
+			display: inline-block;
+		}
+
+		
+		img, textarea{
+			float: left;
+		}
+
+		.comment-section{
+			background-color: #F7F7F7;
+			margin-bottom: 10px;
+			padding: 10px;
+			box-shadow:0 1px 2px rgba(0,0,0,.1);
+		}
+
+		.user-comment textarea{
+			margin-left:10px;
+			width: 80%;
+			border: none;
+		}
+		
+		
+		.pl10{
+			padding-left: 70px;
+		}
+
+		.item{
+			display: inline-block;
+		}
+
+		.embed-responsive{
+			margin-bottom:10px;
+		}
+
+		</style>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle">
+						<span class="sr-only">選單切換</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">HIMI VEDIO</a>
+				</div>
+				
+				<!-- 手機隱藏選單區 -->
+				<div class="my-navbar leftIn">
+					<!-- 左選單 -->
+					<div class="nav navbar-nav navbar-left">
+						<!-- <span title="Youtube首頁" class="logo"></span> -->
+					</div>
+					
+				
+					<!-- 搜尋表單 -->
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="請輸入關鍵字">
+						</div>
+						<button type="submit" class="btn btn-default">搜尋</button>
+					</form>
+				
+					<!-- 右選單 -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">上傳</a></li>
+						<li><a href="#"><span class="badge">10</span>訊息</a></li>
+						<li><a href="#">設定</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">語言選擇<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">繁體中文</a></li>
+								<li><a href="#">English</a></li>
+								<li><a href="#">日本語</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- 手機隱藏選單區結束 -->
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<!-- 4:3 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3WJHAXlc3vA"></iframe>
+					</div>
+					
+					<div class="comment-section">
+						<strong>發佈日期：2015年6月26日</strong><br>
+						<span><strong>類別</strong>人物與網誌</span><br>
+                        <span><strong>授權</strong>標準 YouTube 授權</span>
+					</div>
+
+					<div class="comment-section">
+					
+							<div class="comment-section-header">
+								<p>留言 46</p>
+
+								<div class="user-comment">
+									<img src="jpg/img1482659125912-1.jpg" class="img-responsive">
+									<textarea rows="5"></textarea>
+								</div>
+								<div class="clearfix"></div>
+								
+								<hr>
+
+								<div class="dropdown btn btn-default">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">熱門留言<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">熱門留言</a></li>
+										<li><a href="#">由新到舊</a></li>
+									</ul>
+								</div>
+
+
+							</div>
+							
+
+								<div class="user-comment">
+									<img src="jpg/img1482659125912-1.jpg" class="img-responsive">
+									<div class="pl10">
+										<h3>Lorem ipsum dolor sit amet.</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maiores unde possimus nulla cupiditate. Explicabo harum repellat corrupti, excepturi eum?</p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+
+					</div>
+					
+
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="item">
+						<div class="col-xs-12 col-sm-6">
+							<img src="jpg/fashion-1478810__480.jpg" class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h4>對話近日一</h4>
+
+						</div>
+
+					</div>
+					
+					<div class="item">
+						<div class="col-xs-12 col-sm-6">
+							<img src="jpg/fashion-1478810__480.jpg " class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h4>對話近日一</h4>
+
+						</div>
+
+					</div>
+					
+
+					<div class="item">
+						<div class="col-xs-12 col-sm-6">
+							<img src="jpg/fashion-1478810__480.jpg " class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h4>對話近日一</h4>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+						<div class="col-xs-12 col-sm-6">
+							<img src="jpg/fashion-1478810__480.jpg " class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h4>對話近日一</h4>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+						<div class="col-xs-12 col-sm-6">
+							<img src="jpg/fashion-1478810__480.jpg " class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h4>對話近日一</h4>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+						<div class="col-xs-12 col-sm-6">
+							<img src="jpg/fashion-1478810__480.jpg " class="img-responsive">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<h4>對話近日一</h4>
+
+						</div>
+
+					</div>
+						
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!-- 將以下原始碼複製到bootstrap.js檔案連結的下方 -->
+		
+		
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+		$(function(){
+			$('.navbar-toggle').on('click', switchNav)
+			function switchNav(){
+				$('.my-navbar').toggleClass('open');
+			}
+		})
+		</script>
+	</body>
+</html>
