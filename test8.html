@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<title>Title Page</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./bootstrap-social/bootstrap-social.css">
 		<!--[if lt IE 9]>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -16,6 +18,9 @@
 			body{
 				background-color: #E1D8CC;
 			}
+			.navbar{
+				margin-bottom:0;
+			}
 
 			.banner{
 				padding: 200px 0;
@@ -24,6 +29,11 @@
 			.banner .btn{
 				border-radius:0;
 				width: 20%;
+			}
+			
+			.banner h2{
+				width: 50%;
+				margin: 0 auto;
 			}
 
 			.welcome{
@@ -48,18 +58,66 @@
 				padding: 20px;
 			}
 			
+			.tips .btn{
+				display: block;
+				padding: 10px 0;
+				border-radius: 0;
+				border: 3px solid #5DBAE2;
+				color: #5DBAE2;
+				font-weight: 900;
+				font-size: 20px;
+			}
+
+			.tips img:after{
+				content:"+";
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right:0;
+				position: absolute;
+				display: block;
+				width: 20px;
+				height:20px;
+				border: 2px solid red;
+				line-height: 20px;
+				z-index: 10;
+
+			}
+
 			.before{
 				margin-top: -175px;
 			}
 
+			.before a{
+				padding: 0;
+			}
+
 			.comment{
 				background-color: #FFFFFF;
+				margin-top: 100px;
+				z-index: 10;
+			}
+			
+			.comment h2{
+				margin:30px 0;
+			}
+			
+			
+			.pager{
+			margin-bottom: 0px;
 			}
 
 			.pager li a{
 				width: 100%;
 				border-radius: 0;
+				border: none;
+				background-color:#3EA0C7;
+				color: white;
+				padding: 20px 0;
+			}
 
+			.pager li a:hover{
+				background-color: #5DBAE2;
 			}
 
 			.pager li{
@@ -67,9 +125,46 @@
 				width: 50%;
 			}
 
-				
+			.pager li+li a{
+				content:"";
+				border-left: 2px solid white;
+				display: block;
+			}
+			
+			.map{
+				margin-top: -200px;
+			}
+			
+			.himi-footer, .himi-footer a{
+				background-color: #333132;
+				color: white;
+				margin-top: -200px;
+
+			}
+
+			.himi-footer .btn-default{
+				background-color: transparent;
+				color: white;
+				border-radius:0;
+			
+			}
+
+			.himi-footer h2{
+				color: #3EA0C7;
+			}
+
+
+			.himi-footer h3{
+				color:#6D6E71;
+			}
+
+			
 			.pleft15{
 				padding-left:0;
+			}
+
+			.p20{
+				padding: 20px;
 			}
 		</style>
 	</head>
@@ -232,7 +327,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-3 pleft15">
 						<div class="item text-center">
-							<img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive">
+							<a href=""><img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive"></a>
 							<div class="main">
 								<h3>Lorem.</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, saepe!</p>
@@ -242,7 +337,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-3 pleft15">
 						<div class="item text-center">
-							<img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive">
+							<a href=""><img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive"></a>
 							<h3>Lorem.</h3>
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, est!</p>
@@ -252,7 +347,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-3 pleft15">
 						<div class="item text-center">
-							<img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive">
+							<a href=""><img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive"></a>
 							<h3>Lorem.</h3>
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptates.</p>
@@ -262,7 +357,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-3 pleft15">
 						<div class="item text-center">
-							<img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive">
+							<a href=""><img src="https://api.fnkr.net/testimg/400x300/00CED1/FFF/?text=img+placeholder" class="img-responsive"></a>
 							<h3>Lorem.</h3>
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, doloremque.</p>
@@ -309,7 +404,7 @@
 							<div class="col-xs-12 col-sm-6">
 								<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit iste beatae, laudantium deleniti numquam. Quam consequatur iste ipsa voluptates laborum.</p>
-								<p><a href="#" class="btn more">More</a></p>
+								<p><a href="#" class="btn more">More <i class="glyphicon glyphicon-chevron-right"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -331,36 +426,65 @@
 
 
 		<!-- comment=========================================== -->
-			<div class="container">
-				<div class="row">
+			<div class="container ">
+				<div class="row ">
 						<div class="col-xs-12 col-sm-8 col-sm-offset-2 comment">
-							<div class="row">
-								<div class="col-xs-12 col-sm-3 pt15">
+							<div class="row p20">
+								<div class="col-sm-12">
+									<h2>What people say about us</h2>
+								</div>
+								<div class="col-xs-12 col-sm-2">
+									
 									<img src="https://api.fnkr.net/testimg/50x50/00CED1/FFF/?text=img+placeholder" class="img-responsive">
 								</div>
-								<div class="col-xs-12 col-sm-9">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem maiores ad adipisci distinctio. Quaerat autem temporibus velit rerum assumenda magni?</p>
-									<div class="people inline-block">
-										<img src="https://api.fnkr.net/testimg/50x50/00CED1/FFF/?text=img+placeholder" class="img-responsive img-circle">
-										<p>by <cite>Himi</cite></p>
+								<div class="col-xs-12 col-sm-10">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem maiores ad adipisci distinctio. Quaerat autem temporibus velit rerum assumenda magni?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem maiores ad adipisci distinctio. Quaerat autem temporibus velit rerum assumenda magni?</p>
+									<div class="people">
+										<img src="https://api.fnkr.net/testimg/50x50/00CED1/FFF/?text=img+placeholder" class="img-circle">
+										<span>Himi Huang</span>
 									</div>
 								</div>
-							</div>
-						
+						</div>
+
+						<div class="row">
 							<ul class="pager">
-							  <li><a href="#">上一頁</a></li>
-							  <li><a href="#">下一頁</a></li>
+							  <li><a href="#"><i class="glyphicon glyphicon-arrow-left"></i></a></li>
+							  <li><a href="#"><i class="glyphicon glyphicon-arrow-right"></i></a></li>
 							</ul>
 						</div>
+					</div>
+					
 				</div>
 			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- map=========================================== -->
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="map">
-					<!-- 4:3 aspect ratio -->
-					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.308895643735!2d121.53579351889941!3d25.02358915758406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d27d90112f41e4c!2z6Ie65YyX5biC56uL6b6N6ZaA5ZyL5rCR5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1504083297307" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="map">
+						<!-- 4:3 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+						  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.308895643735!2d121.53579351889941!3d25.02358915758406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d27d90112f41e4c!2z6Ie65YyX5biC56uL6b6N6ZaA5ZyL5rCR5Lit5a24!5e0!3m2!1szh-TW!2stw!4v1504083297307" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -382,10 +506,75 @@
 
 
 	<!-- footer=========================================== -->
+	<div class="container ">
+				<div class="row ">
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 himi-footer">
+							<div class="row p20">
+								<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+									<h2>Lown Care</h2>
+								</div>
+								<div class="col-xs-12 col-sm-3 col-sm-offset-1">
+									<h3>Contact us</h3>
+									<p>telephone</p>
+									<p>telephone</p>
+									<p>telephone</p>
 
+								</div>
+								<div class="col-xs-12 col-sm-3 col-sm-offset-1">
+									<h3>Menu</h3>
+									<ul class="list-unstyled">
+										<li><a href="#">Lorem.</a></li>
+										<li><a href="#">Lorem.</a></li>
+										<li><a href="#">Lorem.</a></li>
+										<li><a href="#">Lorem.</a></li>
+										<li><a href="#">Lorem.</a></li>
+									</ul>
+								</div>
+								<div class="col-xs-12 col-sm-3 col-sm-offset-1">
+									<h3>We are social</h3>
+									<ul class="list-unstyled list-inline">
+										<li>
+											<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+										</li>
+									</ul>
+									<h3>Q &amp A</h3>
+									<p class="btn btn-default">Send Request</p>
+
+
+								</div>
+
+								<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+									<p>Lawn Care &copy 2017 All rights reserved. </p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
 
 
 		
+
+
+
+
+
+
+
 		
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
