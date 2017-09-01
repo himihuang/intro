@@ -19,7 +19,12 @@
 				background-color: #E1D8CC;
 			}
 
-			
+   /*nav=============================*/
+			.navbar h3 a, .logo h3 a{
+				text-decoration: none;
+				color: black;
+			}
+
 			.navbar{
 				margin-bottom:0;
 				border: none;
@@ -35,6 +40,9 @@
 			.nav li a{
 				padding: 15px;
 			}
+
+
+   /*nav-logo=============================*/
 
 			.logo{
 				background-color: #D8CCBC;
@@ -52,7 +60,10 @@
 				padding-left:0;
 				padding-right:0;
 			}
-			
+
+
+	 /*nav-pills=============================*/
+		
 			.nav-pills li a{
 				border-radius: 0;
 				font-weight: 900;
@@ -72,7 +83,10 @@
 				top:70%;
 				left:20%;
 			}
-				
+
+
+	   /*nav-dropdown=============================*/
+	
 			.dropdown-menu{
 				background-color:#5BAAC8;
 				border-radius: 0;
@@ -90,6 +104,9 @@
 			font-weight: 400;
 			}
 
+
+   /*banner=============================*/
+
 			.banner{
 				padding: 200px 0;
 				background: url(jpg/paella.jpg)center center repeat-y;
@@ -106,35 +123,19 @@
 			}
 			
 
+   /*welcome=============================*/
+
 			.welcome{
 				background-color:#FFFFFF;
 				margin-top:-200px;
 				padding: 50px;
 			}
-			
+
+
+	/*tips=============================*/
+	
 			.tips{
 				margin: 175px 0;
-			}
-				
-
-			.tips .himi-img{
-				position: relative;
-				width: 100%;
-			}
-
-			.tips .himi-img:after:hover{
-				content: '';
-				position: absolute;
-				display: inline-block;
-				width: 100%;
-				height: 100%;
-				top: 0;
-	            right: 0;
-	            bottom: 0;
-	            left: 0;
-	            opacity: 0.7;
-	            background: #191919;
-
 			}
 
 			.tips h2, .before h2{
@@ -158,32 +159,47 @@
 				font-weight: 900;
 				font-size: 20px;
 			}
-				
-
-			.tips img:after{
-				content:"+";
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right:0;
-				position: absolute;
-				display: block;
-				width: 20px;
-				height:20px;
-				border: 2px solid red;
-				line-height: 20px;
-				z-index: 10;
-
-			}
-				
-			
 			.tips .himi-img{
 				position: relative;
-				display: inline-block;
-				
-
+				overflow: hidden;
 			}
 			
+			.tips .himi-img:after{
+				content: '+';
+				position: absolute;
+				top:0;
+				left:0;
+				bottom: 0;
+				right: 0;
+				width: 20px;
+				height: 20px;
+				margin: auto;
+				display: block;
+				border: 2px solid white;
+				border-radius: 50%;
+				line-height: 15px;
+				color: white;
+			 
+
+			}
+          /* .tips .himi-img:hover{
+				display: block;
+				zoom:1;
+        		transform: scale(1.2);
+        		overflow: hidden;
+ 
+        	} */
+        	.tips .himi-img:hover:after{
+				font-size: 30px;
+ 				width: 40px;
+				height: 40px;
+				margin: auto;
+				display: block;
+				border: 2px solid white;
+				border-radius: 50%;
+				line-height: 15px;
+				color: white;
+        	} 
 			.tips .himi-img .overlay{
 				position: absolute;
 				background-color: white;
@@ -200,7 +216,11 @@
 			
 			.tips .himi-img:hover .overlay{
 				display: block;
+
+
 			}
+			
+   /*before=============================*/
 
 			.before{
 				margin-top: -175px;
@@ -209,6 +229,9 @@
 			.before a{
 				padding: 0;
 			}
+
+
+   /*comment=============================*/
 
 			.comment{
 				background-color: #FFFFFF;
@@ -248,11 +271,17 @@
 				border-left: 2px solid white;
 				display: block;
 			}
-			
+
+
+   /*map=============================*/
+
 			.map{
 				margin-top: -200px;
 			}
-			
+
+
+   /*footer=============================*/
+
 			.himi-footer, .himi-footer a{
 				background-color: #333132;
 				color: white;
@@ -275,8 +304,14 @@
 			.himi-footer h3{
 				color:#6D6E71;
 			}
+			
+			.himi-footer li a:hover{
+				color:#5DBAE2;
+				text-decoration:none;
+			}
 
 			
+	/*其他*/
 			.pleft15{
 				padding-left:0;
 			}
@@ -322,16 +357,16 @@
 					<!-- 左選單 -->
 					  <ul class="nav nav-pills nav-justified">
 					    <li><a href="#">Home</a></li>
-					    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+					    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
 						 <ul class="dropdown-menu">
-					      <li><a href="#">Submenu 1-1</a></li>
-					      <li><a href="#">Submenu 1-2</a></li>
-					      <li><a href="#">Submenu 1-3</a></li> 
+					      <li><a href="#">History</a></li>
+					      <li><a href="#">Place</a></li>
+					      <li><a href="#">founder</a></li> 
 					    </ul>
 					    </li>
-					    <li><a href="#">Menu 2</a></li>
-					    <li><a href="#">Menu 3</a></li>
-					    <li><a href="#">Menu 3</a></li>
+					    <li><a href="#">Cuisine</a></li>
+					    <li><a href="#">Skills</a></li>
+					    <li><a href="#">Contact</a></li>
 
 					  </ul>
 				
@@ -531,7 +566,7 @@
 		<!-- before& after=========================================== -->
 		<div class="before">
 			<div class="container">
-					<h2 class="text-center">Beore &amp After</h2>
+					<h2 class="text-center">Before &amp After</h2>
 				<div class="row">
 					<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 						<div class="row">
@@ -660,11 +695,11 @@
 								<div class="col-xs-12 col-sm-3 col-sm-offset-1">
 									<h3>Menu</h3>
 									<ul class="list-unstyled">
-										<li><a href="#">Lorem.</a></li>
-										<li><a href="#">Lorem.</a></li>
-										<li><a href="#">Lorem.</a></li>
-										<li><a href="#">Lorem.</a></li>
-										<li><a href="#">Lorem.</a></li>
+										<li><a href="#">Hoem.</a></li>
+										<li><a href="#">About.</a></li>
+										<li><a href="#">Cuisine.</a></li>
+										<li><a href="#">Skills.</a></li>
+										<li><a href="#">Contact.</a></li>
 									</ul>
 								</div>
 								<div class="col-xs-12 col-sm-3 col-sm-offset-1">
