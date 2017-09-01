@@ -18,8 +18,69 @@
 			body{
 				background-color: #E1D8CC;
 			}
+
+			
 			.navbar{
 				margin-bottom:0;
+				border: none;
+			}
+			
+			.nav li a{
+				padding: 15px;
+			}
+
+			.logo{
+				background-color: #D8CCBC;
+			}
+
+			.logo h3{
+				font-weight:900;
+			}
+
+			.logo p{
+				padding-top:20px;
+			}
+
+			.navbar-collapse{
+				padding-left:0;
+				padding-right:0;
+			}
+			
+			.nav-pills li a{
+				border-radius: 0;
+				font-weight: 900;
+				text-transform: uppercase;
+				color: black;
+				letter-spacing: 0.6px;
+				font-size: 18px;
+			}
+
+			.nav-pills li a:hover, .nav .open>a:focus{
+				background-color: transparent;
+				color: #5BAAC8;
+			}
+
+
+			.nav-justified .dropdown .dropdown-menu{
+				top:70%;
+				left:20%;
+			}
+				
+			.dropdown-menu{
+				background-color:#5BAAC8;
+				border-radius: 0;
+			}
+			
+			.dropdown-menu li a {
+				color: white;
+				font-weight: 400;
+
+			}
+
+			.dropdown-menu li a:hover{
+			background-color: #5DBAE2;
+			color: white;
+			font-weight: 400;
 			}
 
 			.banner{
@@ -171,8 +232,7 @@
 	<body>
 		
 		<!-- nav=========================================== -->
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
+		<nav class="navbar navbar-light"  role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 						<span class="sr-only">選單切換</span>
@@ -180,44 +240,43 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">CSS可樂</a>
 				</div>
 				
 				<!-- 手機隱藏選單區 -->
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+
+					<div class="container-fluid logo">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12">
+								<h3 class="pull-left"><a href="">NAJERA LAWN CARE</a></h3>
+								<p class="pull-right">Call us:<strong>(210)535-0917</strong></p>
+							</div>
+						</div>
+					</div>
 					<!-- 左選單 -->
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">關於CSS可樂</a></li>
-						<li><a href="#">CSS教學</a></li>
-						<li><a href="#">CSS範例</a></li>
-						<li><a href="#">原創CSS</a></li>
-					</ul>
+					  <ul class="nav nav-pills nav-justified">
+					    <li><a href="#">Home</a></li>
+					    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact us</a>
+						 <ul class="dropdown-menu">
+					      <li><a href="#">Submenu 1-1</a></li>
+					      <li><a href="#">Submenu 1-2</a></li>
+					      <li><a href="#">Submenu 1-3</a></li> 
+					    </ul>
+					    </li>
+					    <li><a href="#">Menu 2</a></li>
+					    <li><a href="#">Menu 3</a></li>
+					    <li><a href="#">Menu 3</a></li>
+
+					  </ul>
 				
 					<!-- 搜尋表單 -->
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="請輸入關鍵字">
-						</div>
-						<button type="submit" class="btn btn-default">搜尋</button>
-					</form>
+					
 				
 					<!-- 右選單 -->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Amos 您好</a></li>
-						<li><a href="#">登出</a></li>
-						<li><a href="#">個人設定</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">繁體中文 <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">繁體中文</a></li>
-								<li><a href="#">English</a></li>
-								<li><a href="#">日本語</a></li>
-							</ul>
-						</li>
-					</ul>
+					
 				</div>
 				<!-- 手機隱藏選單區結束 -->
-			</div>
 		</nav>
 
 
