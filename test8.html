@@ -17,7 +17,160 @@
 
 			body{
 				background-color: #E1D8CC;
+						}
+			/*.box {
+				padding: 4.5em 0;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-flex-wrap: wrap;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-webkit-justify-content: center;
+				justify-content: center;
 			}
+			*/
+/* Box colors */
+			/*.bg-1 {
+				background: #ECEFF1;
+				color: #37474f;
+			}
+			.bg-2 {
+				background: #7986cb;
+				color: #ECEFF1;
+			}
+			.bg-3 {
+				background: #37474f;
+				color: #fff;
+			}*/
+
+/* Common button styles */
+			.button {
+				/*float: left;*/
+				min-width: 150px;
+				max-width: 250px;
+				display: block;
+				margin: 1em;
+				padding: 1em 2em;
+				border: none;
+				background: none;
+				color: inherit;
+				vertical-align: middle;
+				position: relative;
+				z-index: 1;
+				-webkit-backface-visibility: hidden;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.button:focus {
+				outline: none;
+			}
+			.button > span {
+				vertical-align: middle;
+			}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.bg-1 .button {
+	color: #37474f;
+	border-color: #37474f;
+}
+.bg-2 .button {
+	color: #ECEFF1;
+	border-color: #ECEFF1;
+}
+.bg-3 .button {
+	color: #fff;
+	border-color: #fff;
+}
+
+/* Sizes */
+.button--size-s {
+	font-size: 14px;
+}
+.button--size-m {
+	font-size: 16px;
+}
+.button--size-l {
+	font-size: 18px;
+}
+
+/* Typography and Roundedness */
+.button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.button--text-thin {
+	font-weight: 300;
+}
+.button--text-medium {
+	font-weight: 500;
+}
+.button--text-thick {
+	font-weight: 600;
+}
+.button--round-s {
+	border-radius: 5px;
+}
+.button--round-m {
+	border-radius: 15px;
+}
+.button--round-l {
+	border-radius: 40px;
+}
+
+/* Borders */
+.button--border-thin {
+	border: 1px solid;
+}
+.button--border-medium {
+	border: 2px solid;
+}
+.button--border-thick {
+	border: 3px solid;
+}
+
+			.button.button--aylen {
+	background: #fff;
+	color: #37474f;
+	overflow: hidden;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.button--aylen.button--inverted {
+	background: lightsteelblue;
+	color: #fff;
+}
+.button--aylen::before,
+.button--aylen::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 100%;
+	left: 0;
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--aylen::before {
+	background: #7986cb;
+}
+.button--aylen::after {
+	background: #3f51b5;
+}
+.button--aylen:hover {
+	color: #fff;
+}
+.button--aylen:hover::before,
+.button--aylen:hover::after {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.button--aylen:hover::after {
+	-webkit-transition-delay: 0.175s;
+	transition-delay: 0.175s;
+}
 
    /*nav=============================*/
 			.navbar h3 a, .logo h3 a{
@@ -99,9 +252,9 @@
 			}
 
 			.dropdown-menu li a:hover{
-			background-color: #5DBAE2;
-			color: white;
-			font-weight: 400;
+				background-color: #5DBAE2;
+				color: white;
+				font-weight: 400;
 			}
 
 
@@ -150,7 +303,7 @@
 				padding: 20px;
 			}
 			
-			.tips .btn{
+			/*.tips .btn{
 				display: block;
 				padding: 10px 0;
 				border-radius: 0;
@@ -158,7 +311,10 @@
 				color: #5DBAE2;
 				font-weight: 900;
 				font-size: 20px;
-			}
+			}*/
+
+			
+
 			.tips .himi-img{
 				position: relative;
 				overflow: hidden;
@@ -357,12 +513,13 @@
 					<!-- 左選單 -->
 					  <ul class="nav nav-pills nav-justified">
 					    <li><a href="#">Home</a></li>
-					    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
-						 <ul class="dropdown-menu">
-					      <li><a href="#">History</a></li>
-					      <li><a href="#">Place</a></li>
-					      <li><a href="#">founder</a></li> 
-					    </ul>
+					    <li class="dropdown">
+					    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+							 <ul class="dropdown-menu">
+						      <li><a href="#">History</a></li>
+						      <li><a href="#">Place</a></li>
+						      <li><a href="#">founder</a></li> 
+						    </ul>
 					    </li>
 					    <li><a href="#">Cuisine</a></li>
 					    <li><a href="#">Skills</a></li>
@@ -494,7 +651,7 @@
 
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, saepe!</p>
-								<p><a href="#" class="btn btn-default more">More</a></p>
+								<div class="box bg-2"><button class="button button--aylen button--border-thick button--inverted button--text-upper button--size-s">More</button></div>
 							</div>
 						</div>
 					</div>
@@ -507,7 +664,7 @@
 							<h3>Lorem.</h3>
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, est!</p>
-								<p><a href="#" class="btn btn-default more">More</a></p>
+								<div class="box bg-2"><button class="button button--aylen button--border-thick button--inverted button--text-upper button--size-s">More</button></div>
 							</div>
 						</div>
 					</div>
@@ -520,7 +677,7 @@
 							<h3>Lorem.</h3>
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptates.</p>
-								<p><a href="#" class="btn btn-default more">More</a></p>
+								<div class="box bg-2"><button class="button button--aylen button--border-thick button--inverted button--text-upper button--size-s">More</button></div>
 							</div>
 						</div>
 					</div>
@@ -533,7 +690,7 @@
 							<h3>Lorem.</h3>
 							<div class="main">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, doloremque.</p>
-								<p><a href="#" class="btn btn-default more">More</a></p>
+								<div class="box bg-2"><button class="button button--aylen button--border-thick button--inverted button--text-upper button--size-s">More</button></div>
 							</div>
 						</div>
 					</div>
@@ -683,7 +840,7 @@
 						<div class="col-xs-12 col-sm-8 col-sm-offset-2 himi-footer">
 							<div class="row p20">
 								<div class="col-xs-12 col-sm-10 col-sm-offset-1">
-									<h2>The Woeld Kitchen</h2>
+									<h2>The World Kitchen</h2>
 								</div>
 								<div class="col-xs-12 col-sm-3 col-sm-offset-1">
 									<h3>Contact us</h3>
